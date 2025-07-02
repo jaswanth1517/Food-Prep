@@ -1,0 +1,127 @@
+.cart {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+  font-family: Arial, sans-serif;
+}
+
+.cart-items {
+  width: 100%;
+}
+
+.cart-items-title {
+  display: grid;
+  grid-template-columns: 100px 1fr 100px 100px 100px 60px;
+  align-items: center;
+  gap: 10px;
+  font-weight: bold;
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.cart-items-item {
+  font-weight: normal;
+}
+
+.cart-items-item img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.cart-items-item p {
+  margin: 0;
+}
+
+.cart-items hr {
+  border: none;
+  border-bottom: 1px solid #ccc;
+  margin-top: 10px;
+}
+
+.cross {
+  color: red;
+  cursor: pointer;
+  font-weight: bold;
+  text-align: center;
+}
+
+.cart-bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.cart-total {
+  flex: 1;
+  min-width: 300px;
+  background-color: #f9f9f9;
+  padding: 20px 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.cart-total h2 {
+  margin-bottom: 20px;
+}
+
+.cart-total-details {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.cart-total button {
+  width: 100%;
+  margin-top: 20px;
+  padding: 12px;
+  background-color: #ff4d4f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cart-total button:hover {
+  background-color: #e04343;
+}
+
+.cart-promocode {
+  margin-top: 20px;
+}
+
+.promo-input-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.promo-input-group input {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  flex: 1;
+  min-width: 200px;
+}
+
+.promo-input-group button {
+  padding: 8px 16px;
+  border: none;
+  background-color: #333;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.promo-input-group button:hover {
+  background-color: #555;
+}
